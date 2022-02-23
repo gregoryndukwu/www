@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     min-height: 70px;
-    background-image: linear-gradient(#4600C8,#4D00CC,#caa778);
+    background-image: linear-gradient(#141314,#ebe8f0,#292827);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(rgb(236, 153, 153),rgb(4, 15, 7));
+    background-image: linear-gradient(#141314,#5e5b61,#292827);
   }
   
   li {
@@ -40,4 +40,20 @@ ul {
   .img{
       width: 350px;
       height: 350px;
+  }
+  h1,h2{
+    text-align: center;
+  }
+  header{
+    background-image: linear-gradient(rgb(194, 167, 167),rgb(182, 206, 182));
+  }
+  body{
+    background-color: #5e5b61;
+  }
+  footer{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(48, 49, 49);
   }
