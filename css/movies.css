@@ -10,10 +10,11 @@ body{
 }
 
 .container{
-    border: 2px solid rgb(97, 95, 95);
+  /*  border: 2px solid rgb(97, 95, 95);
     border-radius: 10px;
     width: 60%;
-    min-height: 1465px;
+    min-height: 1465px; */
+    
     position: relative;
     margin-left: 20%;
     margin-right: 20%;
@@ -24,7 +25,7 @@ body{
     /*border: 2px solid black;*/
     float: left;
     height: 100%;
-    margin-top: 10px;
+    
 }
 
 .leftContent{
@@ -34,7 +35,7 @@ body{
     border-radius: 12px;
     float: left;
     height: 100%;
-    margin-top: 10px;
+    
     background-color: #A2B964;
 }
 .divReview{
@@ -63,7 +64,9 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    
+    width: 100%;
+    border-radius: 5px;
 }
 .footer{
     width: 78%;
@@ -73,4 +76,12 @@ p{
     float: left;
     text-align: center;
     margin-top: -33px;
+}
+h2{
+    text-align: center;;
+}
+.validador{
+    float: right;
+    margin-top: 0%;
+    position: relative;
 }
