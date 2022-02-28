@@ -1,0 +1,9 @@
+Product Form
+https://gregoryndukwu.github.io/www/productForm.html
+https://github.com/gregoryndukwu/www/blob/main/productForm.html
+
+Email Form
+https://gregoryndukwu.github.io/www/emailForm.html
+https://github.com/gregoryndukwu/www/blob/main/emailForm.html
+
+
