@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,61 @@
     <link href="css/formStyle.css" type="text/css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-     <!--  
+        <!--  
     <div class="box"></div>
     <div class="box"></div> -->
 
-        
-    <form action="tratarForm.html" method="get">
-        <label for="lproduct_Number">Product Number:</label>
-        <input type="text" id="product_Number" name="product_Number" placeholder="Product Number">&emsp;&emsp;
-        <label for="lqt_stock">Quantity In Stock:</label>
-        <input type="text" id="qt_stock" name="qt_stock" placeholder="Quantity In Stock">
-        <br />
-        <label for="lname">Name:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-        <input type="text" id="name" name="name" placeholder="Name">&emsp;&emsp;
-        <label for="lsupplier:">Supplier:</label>&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
-        <select id="supplier" name="supplier">
-            <option></option>
-            <option value="dell">Dell</option>
-            <option value="ibm">IBM</option>
-            <option value="hp">HP</option>
-            <option value="mac">Mac</option>
-        </select>
-        <br />
-        <label for="lUnit_price">Unit Price:</label>&emsp;&emsp;&emsp;&emsp;
-        <input type="text" id="unit_price" name="unit_price" placeholder="0.0">&emsp;&emsp;
-        <label for="lqt_stock">Date Supplied:</label>&emsp;&nbsp;&nbsp;
-        <input type="text" id="dt_supplied" name="dt_supplied" placeholder="Date Supplied"> <br /><br />
-        <button id="reset">Reset</button>
-        <button id="cancel">Cancel</button>
-        <button id="reset">Add Product</button>
-        
-    </form> 
-    
+
+        <form action="tratarproduto.html" method="get" id="form1">
+            <label for="lproduct_Number">Product Number:</label>
+            <input type="text" id="product_Number" name="product_Number" placeholder="Product Number / Only Numbers Here" pattern="[0-9]+">&emsp;&emsp;
+            <label for="lqt_stock">Quantity In Stock:</label>
+            <input type="text" id="qt_stock" name="qt_stock" placeholder="Quantity In Stock">
+            <br />
+            <label for="lname">Name:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" id="name" name="name" placeholder="Name">&emsp;&emsp;
+            <label for="lsupplier:">Supplier:</label>&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+            <select id="supplier" name="supplier">
+                <option></option>
+                <option value="dell">Dell</option>
+                <option value="ibm">IBM</option>
+                <option value="hp">HP</option>
+                <option value="mac">Mac</option>
+            </select>
+            <br />
+            <label for="lUnit_price">Unit Price:</label>&emsp;&emsp;&emsp;&emsp;
+            <input type="text" id="unit_price" name="unit_price" placeholder="0.0">&emsp;&emsp;
+            <label for="lqt_stock">Date Supplied:</label>&emsp;&nbsp;&nbsp;
+            <input type="text" id="dt_supplied" name="dt_supplied" placeholder="Date Supplied"> <br /><br />
+            <input type="submit" class="submit" name="Add Product" value="Add Product">
+
+        </form>
+        <br>
+        <button id="reset"  onclick="reset()">Reset</button>
+        <button id="cancel" onclick="cancel()">Cancel</button>
     </div>
+    teste
+    <script>
+        function reset(){
+            document.getElementById('form1').reset();
+        }
+     </script>
+     <script>   
+        function cancel() {
+            
+            let text;
+            if (confirm("Are you Sure / Want Cancel ?") == true) {
+                window.location.href = "./emailForm.html";
+            } else {
+                document.getElementById("product_Number").focus();
+            }
+            
+        }  
+        
+    </script>
 </body>
+
 </html>
