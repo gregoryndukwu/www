@@ -2,7 +2,7 @@ window.onload = function(){
     var params = window.location.search.substring(1).split('&');
     var size = params.length;
     var userName = params[0].split("=",2);
-    var login = params[1].split("=",2);
+    var login = paramse[1].split("=",2);
     var check = params[2].split("=",2);
     console.log(size)
 
@@ -15,6 +15,8 @@ window.onload = function(){
         document.getElementById('checked').innerHTML = "Checked is Off";
     }
 
-   
+  function clean(){
+      alert('clean')
+  } 
 
 }
