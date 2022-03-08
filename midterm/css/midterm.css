@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #4F78A5;
+    height: 4em;
+    width: 100%;
+}
+nav {
+    margin: 0em;
+    width: 80%;
+}
+
+a#hyplnkAppBranding {
+    color: #efefef;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+ul#ulNavItems > li {
+    display: inline;
+    list-style-type: none;
+}
+a.hyplnkNavItem {
+    color: #efefef;
+    text-decoration: none;
+    font-size: large;
+    border-left: 1px solid #efefef;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+div#divHeaderRightContent {
+    margin-right: 1em; 
+    border: 0px solid #efefef; 
+    width: 100%; 
+    display: inline; 
+    color: #efefef;
+}
+.principal{
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.images{
+    width: 100%;
+    height:200px;
+}
+.leftContent{
+    width: 67%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    float: left;
+
+}
+.righContent{
+    width: 29.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    float: left;
+    margin-left: 3%;
+   
+}
+div.form-row {
+    width: 90%;
+    margin-bottom: 1em;
+}
+div.form-row2 {
+    width: 42%;
+    margin-bottom: 1em;
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+}
+div.form-item {
+    width: 100%;
+}
+.form-ctrl {
+    width: 100%;
+    height: 2.5em;
+    font-size: medium;
+    border-radius: 5%;
+}
+.form{
+    width: 97%;
+    float: left;
+ 
+}
+.radio{
+    display: inline;
+    text-align: center;
+    margin-top: 10%;
+}
+.btn-std-med {
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #4F78A5;
+    color: white;
+    border: 1px solid #4F78A5;
+    padding: 1em;
+    border-radius: 4%;
+}
+.btn-std-med2 {
+    font-weight: bold;
+    font-size: 1em;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 4%;
+}
+.input{
+    width: 200px;
+    margin-top: 5%;
+    margin-left: 5%;
+}

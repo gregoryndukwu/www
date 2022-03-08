@@ -1,0 +1,10 @@
+https://github.com/gregoryndukwu/www/blob/main/js/assigment5.js
+
+Question 14
+https://gregoryndukwu.github.io/www/productForm.html
+https://github.com/gregoryndukwu/www/blob/main/productForm.html
+
+
+Question 15
+https://github.com/gregoryndukwu/www/blob/main/timer.html
+https://gregoryndukwu.github.io/www/timer.html

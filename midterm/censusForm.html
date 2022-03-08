@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census Form</title>
+    <link rel="stylesheet" href="css/midterm.css">
+    <script src="js/midterm.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="ulNavItems">
+                <li>
+                    <a id="hyplnkAppBranding" href="./index.html"> The South West - Regional Census | </a>
+                </li>
+                <li>
+                    <a id="hyplnkAppBranding" href="./index.html"> Home | </a>
+                </li>
+                <li>
+                    <a id="hyplnkAppBranding" href="./censusForm.html"> Census Form </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="divHeaderRightContent">
+        <span style="float: right;">Saturday, 5 March 2022 - 10:21:37</span>
+    </div>
+    <div class="principal">
+        <h1 id="h1CensusForm">Census Form</h1>
+        <form id="censusForm">
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="txtName">*Full Name:</label>
+                </div>
+                <div class="form-item">
+                    <input class="form-ctrl" type="text" name="txtName" id="txtName" placeholder="enter your full name">
+                </div>
+                <div class="form-item small-instr-text">
+                    <span>Enter your Full Name as printed on your Government-issued ID</span>
+                </div>
+                <div class="form-row2">
+                    <div class="form-item">
+                        <label for="txtCitizen">*Citizen ID:</label>
+                        <input class="form-ctrl form" type="text" name="txtCitizen" id="txtCitizen"
+                            placeholder="XXXXXXXXXX" pattern="\d{10}">
+                    </div>
+                    
+                </div>
+                <div class="form-row2">
+                    <div class="form-item">
+                        <label for="txtSocial">*Social Security Number :</label>
+                        <input class="form-ctrl form" type="text" name="txtSocial" id="txtSocial"
+                            placeholder="XXX-XX-XXXX" pattern="\d{3}-\d{2}-\d{4}">
+                    </div>
+                </div>
+                <div class="form-row2">
+                    <div class="form-item">
+                        <label for="txtDepartment">*State:</label>
+                        <select id="txtState" class="form-ctrl form">
+                            <option></option>
+                            <option id="AZ">Arizona</option>
+                            <option id="NM">New Mexico</option>
+                            <option id="TX">Texas</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="form-row2">
+                    <div class="form-item">
+                        <label for="txtLast">*Senior Citizen?</label>
+                        <br /><br />
+                        <label class="radio">
+                            <input type="radio" name="radio" id="r1" value="Yes"> Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" id="r1" value="No"> No
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+            
+                <input class="btn-std-med2 input" type="reset" value="Reset">
+                <input class="btn-std-med input" type="submit" value="Register Census">
+          
+        </form>
+    </div>
+</body>
+
+</html>

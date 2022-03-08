@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolyCross Medical Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="ulNavItems" >
+                <li>
+                  <a id="hyplnkAppBranding" href="./index.html"> HolyCross Medical Center | </a>
+                </li>
+                <li>
+                    <a id="hyplnkAppBranding" href="./index.html"> Home | </a>
+                </li>
+                <li>
+                    <a id="hyplnkAppBranding" href="./patient.html"> Patients </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="divHeaderRightContent">
+            <span style="float: right;">Welcome, Guestt</span>
+        </div>
+       
+ </header>
+ <div class="principal">
+    <h1 id="h1PatientRegForm">Registration Form</h1>
+      <form id="patientForm">
+        <div class="form-row">
+            <div class="form-item">
+                <label for="txtPatientId">*Patient ID No:</label>
+            </div>
+            <div class="form-item">
+                <input class="form-ctrl" type="text" name="txtPatientId" id="txtPatientId" placeholder="EP-XXX-XXXXXX" required autofocus pattern="EP-\d{3}-\d{6}">
+            </div>
+            <div class="form-item small-instr-text">
+                <span>Enter the Patient ID Number, in the specified format.</span>
+            </div>
+            <br/>
+            <div class="form-row2">
+                <div class="form-item">
+                    <label for="txtName">*First Name:</label>
+                    <input class="form-ctrl form" type="text" name="txtName" id="txtName" placeholder="Enter First Name">
+                </div>                                      
+            </div>
+            <div class="form-row2">
+                <div class="form-item">
+                    <label for="txtMiddle">Middle Initials(s):</label>
+                    <input class="form-ctrl form" type="text" name="txtMiddle" id="txtMiddle" placeholder="Enter Middle Initials(s)">
+                </div>   
+            </div>
+            <div class="form-row2">
+                <div class="form-item">
+                    <label for="txtLast">*Last Name:</label>
+                    <input class="form-ctrl form" type="text" name="txtLast" id="txtLast" placeholder="Last Name:">
+                </div>   
+            </div>
+
+            <div class="form-row2">
+                <div class="form-item">
+                    <label for="txtDate">*Date of birth::</label>
+                    <input class="form-ctrl form" type="text" name="txtDate" id="txtDate" placeholder="mm/dd/yyyy">
+                </div>                                      
+            </div>
+            <div class="form-row2">
+                <div class="form-item">
+                    <label for="txtDepartment">*Department:</label>
+                    <select class="form-ctrl form">
+                        <option></option>
+                        <option id="card">Cardiology</option>
+                        <option id="cold">Ear,Nose and Throat</option>
+                        <option id="primary">Primary Care</option>
+                        <option id="una">[Unassigned]</option>
+                    </select>
+                
+                </div>   
+            </div>
+            <div class="form-row2">
+                <div class="form-item">
+                    <label for="txtLast">*Is this an Out-patient?</label>
+                    <br /><br />
+                    <label class="radio">
+                        <input type="radio" name="radioYes"> Yes
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radioNo"> No
+                    </label>
+                    
+                </div>   
+            </div>
+            <!--
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="txtName">*First Name:</label>
+                </div>              
+                <div class="form-item">
+                    <input class="form-ctrl form" type="text" name="txtName" id="txtName" placeholder="Enter First Name">
+                </div>
+                
+                <div class="form-item">
+                    <input class="form-ctrl form" type="text" name="txtName" id="txtName" placeholder="Enter First Name">
+                </div>
+                <div class="form-item">
+                    <input class="form-ctrl form" type="text" name="txtName" id="txtName" placeholder="Enter First Name">
+                </div>
+            </div> -->
+        </div>
+        <div class="form-row">
+            <input class="btn-std-med" type="submit" value="Reset">
+            <input class="btn-std-med"  type="submit" value="Register Patient">
+        </div> 
+      </form>      
+</div>
+ </body>
+ </html>       
