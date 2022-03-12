@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         var rowCount = $('table >tbody >tr').length;
 
-        console.log(rowCount);
+        
 
     })
 
