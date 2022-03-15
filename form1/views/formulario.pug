@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+    head
+        title Number Quiz
+      
+    body 
+    form(action='/cad', method='POST')
+      p
+        | title: 
+        input(name='title', value='', type='text')
+        |          year: 
+        input(name='year', value='', type='text')
+        |          imdb: 
+        input(name='imdb', value='', type='text')
+      input(value='Submit', type='submit')
