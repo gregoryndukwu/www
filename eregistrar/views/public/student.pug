@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS472 Final 2022</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    
+</head>
+<body>
+aqui
+    <header>
+        <nav>
+            <ul id="ulNavItems">
+                <li>
+                    <a id="hyplnkAppBranding" href="/home">CS472:: Final 2022 Student Registration</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div id="divHeaderRightContent">
+            <span style="float: right;">Welcome, Guest</span>
+        </div>
+    </header>
+    <div id="mainContainer">
+        <main>
+            <h1 id="h1StudentForm">Student Form2235</h1>
+            <form id="formNewStudent" action="/student/new" method="post">
+                <fieldset style="border: 0;">
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtStudentNo">*Student ID Number</label>
+                        </div>
+                        <div class="form-item">
+                            <input class="form-ctrl" type="text" name="txtStudentNo" id="txtStudentNo" placeholder="000-XX-XXXX" required autofocus pattern="000-\d{2}-\d{4}">
+                        </div>
+                        <div class="form-item small-instr-text">
+                            <span>Enter the student ID Number (in the Format shown).</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtStudentName">Full Name</label>
+                        </div>
+                        <div class="form-item">
+                            <input class="form-ctrl" type="text" name="txtStudentName" id="txtStudentName" placeholder="Enter your Full Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="ddlStudentType">Level Of Study</label>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-ctrl-sel" name="ddlStudentType" id="ddlStudentType" required>
+                                <option value="">Select...</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Undergraduate">Undergraduate</option>
+                 
+                            </select>
+                        </div>
+                    </div>   
+                    <div class="form-row">
+                        <input class="btn-std-med" type="reset" value="Reset">
+                    </div> 
+                    <div class="form-row">
+                        <input class="btn-std-med" type="submit" value="Submit Registration">
+                    </div>                                     
+                </fieldset>
+            </form>
+            <table id="tblStudents">
+                <caption>List of Registrations</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Course of Choice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    -let i=1;
+                    for student in students 
+                        tr
+                            td #{i}
+                            td #{student.studentNo}
+                            td #{student.studentName}
+                            td #{student.studentType}
+                        -i++;
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <span>CS472-WAP ::: Final 2022
+            </span>
+            <span style="float: right;">Gregory  ::: &copy; March 2022
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
